@@ -1,4 +1,174 @@
-experience: [
-  {title: "programador"},
-  {title: "programador 2"}
-]
+name: "Santiago Mena Peña"
+title: "FullStack Developer"
+cv: "1CV_SantiagoMena_FullStack.pdf"
+titles:
+  - "FullStack Developer"
+  - "PHP Developer"
+  - "Symfony Developer"
+  - "NodeJS Developer"
+  - "ReactNative Developer"
+about-me: "Cuento con + de 8 años de experiencia como Desarrollador Web en diferentes tecnologías, destacándose PHP, NodeJS y JavaScript, habiendo trabajado para diferentes proyectos y clientes. Tengo gran interés y entusiasmo por aprender nuevas tecnologías, explorar nuevos campos de trabajo y enfrentar diferentes desafíos. Soy perseverante, analítico, enérgico, autodidáctico y motivado por crecer día a día."
+age: 1995
+residence: "Argentina"
+nationality: "Colombia"
+email: "santiagomenape@gmail.com"
+phone: "+5491128757248"
+available-location: "Remote"
+available: "Disponibilidad Freelance"
+social-links:
+  - {icon: "linkedin-in", url: "https://www.linkedin.com/in/santiagomenap/"}
+  - {icon: "github", url: "https://github.com/SantiagoMena/"}
+  - {icon: "gitlab", url: "https://gitlab.com/SantiagoMena"}
+  - {icon: "whatsapp", url: "https://wa.me/5491128757248"}
+knowledges:
+  - "PHP"
+  - "Symfony"
+  - "Laravel"
+  - "Yii"
+  - "Codeignitier"
+  - "React"
+  - "React Native"
+  - "Redux"
+  - "Express.js"
+  - "MySQL"
+  - "ElasticSearch"
+  - "JavaScript"
+  - "GCP"
+  - "AWS"
+  - "EC2"
+  - "S3"
+  - "RDS"
+  - "BigQuery"
+  - "MongoDB"
+  - "Twig"
+  - "Yaml"
+  - "GIT"
+skills:
+  - {title: "Desarrollo Backend", percent: 93}
+  - {title: "Desarrollo Frontend", percent: 45}
+  - {title: "Desarrollo de Aplicaciones", percent: 50}
+  - {title: "Bases de Datos", percent: 65}
+  - {title: "Gestión de Proyectos", percent: 67}
+  - {title: "Refactorización", percent: 40}
+  - {title: "Test Unitarios", percent: 60}
+  - {title: "Patrones de Diseño", percent: 40}
+  - {title: "SOLID", percent: 50}
+experiences:
+  - {
+      title: "Programador Web Full Stack",
+      company: "UNOPS",
+      description: "Proyecto: Desarrollo en Symfony para el Ministerio de Educación de la Ciudad Autónoma de Buenos Aires",
+      from: "2021",
+      to: "Presente"
+    }
+  - {
+      title: "Programador Sr Full Stack", 
+      company: "A1500",
+      description: "Proyecto: Backoffice de administración para la plataforma Seeconds (red social tipo TikTok)",
+      from: "2021",
+      to: "2021"
+    }
+  - {
+      title: "Programador Sr Full Stack", 
+      company: "Ojiva.es",
+      description: "Proyecto: Mejoras en el backoffice y aplicación de red social de pescadores",
+      from: "2021",
+      to: "2021"
+    }
+  - {
+      title: "Lider Técnico", 
+      company: "Alberione Ingeniería de Sistemas",
+      description: "Proyecto: Sistema de formularios para la provincia de Santa Fé",
+      from: "2021",
+      to: "2021"
+    }
+  - {
+      title: "Desarrollador Full Stack", 
+      company: "DeOliva S.R.L.",
+      description: "Proyectos: Desarrollo de APIs y backoffice para un mapa de lotes interactivo, desarrollo de APIs para anuncios en Spotify",
+      from: "2018",
+      to: "2021"
+    }
+  - {
+      title: "Desarrollador Full Stack", 
+      company: "Kickads.mobi",
+      description: "Proyecto: Desarrollo de un adserver de públicidad, integración de APIs de adnetworks",
+      from: "2015",
+      to: "2018"
+    }
+education:
+  - {
+      title: "Programa Ejecutivo en Project Management",
+      date: "2019",
+      institution: "Universidad Tecnológica Nacional",
+      description: "Diplomatura en gestión de proyectos en base a PMI y PMBOK"
+    }
+  - {
+      title: "Programador Web Avanzado",
+      date: "2015",
+      institution: "Universidad Tecnológica Nacional",
+      description: "Diplomatura en Programación Web Avanzada"
+    }
+  - {
+      title: "Ingeniería de Sistemas",
+      date: "2013",
+      institution: "Universidad De Los Llanos",
+      description: "Programa en Ingeniería de Sistemas - no concluido"
+    }
+clients:
+  - {logo: "petbnb.png", url: "https://petbnb.nl/"}
+  - {logo: "bambic.png", url: "https://bambic.com.ar/"}
+  - {logo: "vazquez.png", url: "https://carlosvazquezehijopropiedades.com.ar/"}
+  - {logo: "brana.png", url: "https://xn--abraa-rta.com.ar/"}
+  - {logo: "vital.png", url: "https://vitalpropiedades.com.ar/"}
+  - {logo: "contenidos-digitales.svg", url: "https://contenidos-digitales.com/"}
+  - {logo: "kickads.png", url: "https://kickads.mobi/"}
+services:
+  - {
+      title: "Desarrollo Web",
+      description: "Desarrollo de sistemas y paginas en internet",
+      icon: "laptop-phone"
+    }
+  - {
+      title: "Migración de sistemas Legacy",
+      description: "Migración de sistemas legacy, herados o antiguos, a nuevos frameworks",
+      icon: "code"
+    }
+  - {
+      title: "Desarrollo de aplicaciones",
+      description: "Desarrollo de aplicaciones hibridas en React Native",
+      icon: "smartphone"
+    }
+  - {
+      title: "Desarrollo y Sincronización de APIs",
+      description: "Desarrollo y sincronización entre APIs de servidores propios y de terceros",
+      icon: "cloud-sync"
+    }
+portfolio:
+  - {
+      title: "PetBnB",
+      img: "petbnb.jpeg"
+    }
+  - {
+      title: "Bambic Propiedades",
+      img: "bambic.jpeg"
+    }
+  - {
+      title: "Braña Propiedades",
+      img: "brana.jpeg"
+    }
+  - {
+      title: "Lugano Vive",
+      img: "luganovive.jpeg"
+    }
+  - {
+      title: "Vital Propiedades",
+      img: "vital.jpeg"
+    }
+  - {
+      title: "Vazquez Propiedades",
+      img: "vazquez.jpeg"
+    }
+languages:
+  - {language: "Español", percent: 100}
+  - {language: "Inglés", percent: 30}

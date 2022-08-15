@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <title>Santiago Mena - Resume / CV / vCard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="Santiago Mena - Resume / CV / vCard" />
+    <meta name="keywords" content="vcard, resposnive, retina, resume, jquery, css3, bootstrap, CV, portfolio, santiago, mena, software, developer" />
+    <meta name="author" content="lmpixels" />
+    <link rel="shortcut icon" href="assets/resume/favicon.ico">
+
+
+    <link rel="stylesheet" href="assets/resume/css/reset.css" type="text/css">
+    <link rel="stylesheet" href="assets/resume/css/bootstrap-grid.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/resume/css/animations.css" type="text/css">
+    <link rel="stylesheet" href="assets/resume/css/perfect-scrollbar.css" type="text/css">
+    <link rel="stylesheet" href="assets/resume/css/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="assets/resume/css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="assets/resume/css/main.css" type="text/css">
+  </head>
+
+  <body>
+    <!-- Animated Background -->
+    <div class="lm-animated-bg" style="background-image: url(assets/resume/img/main_bg.png);"></div>
+    <!-- /Animated Background -->
+
+    <!-- Loading animation -->
+    <div class="preloader">
+      <div class="preloader-animation">
+        <div class="preloader-spinner">
+        </div>
+      </div>
+    </div>
+    <!-- /Loading animation -->
+
+    <div class="page">
+      <div class="page-content">
+
+          <header id="site_header" class="header mobile-menu-hide">
+            <div class="header-content">
+              <div class="header-photo">
+                <img src="assets/resume/img/main_photo.jpg" alt="{{ site.data.resume.name }}">
+              </div>
+              <div class="header-titles">
+                <h2>{{ site.data.resume.name }}</h2>
+                <h4>{{ site.data.resume.title }}</h4>
+              </div>
+            </div>
+
+            <ul class="main-menu">
+              <li class="active">
+                <a href="#home" class="nav-anim">
+                  <span class="menu-icon lnr lnr-home"></span>
+                  <span class="link-text">Inicio</span>
+                </a>
+              </li>
+              <li>
+                <a href="#about-me" class="nav-anim">
+                  <span class="menu-icon lnr lnr-user"></span>
+                  <span class="link-text">Sobre Mi</span>
+                </a>
+              </li>
+              <li>
+                <a href="#resume" class="nav-anim">
+                  <span class="menu-icon lnr lnr-graduation-hat"></span>
+                  <span class="link-text">Curriculum</span>
+                </a>
+              </li>
+              <li>
+                <a href="#portfolio" class="nav-anim">
+                  <span class="menu-icon lnr lnr-briefcase"></span>
+                  <span class="link-text">Portafolio</span>
+                </a>
+              </li>
+              {% if site.posts.lenght %}
+              <li>
+                <a href="#blog" class="nav-anim">
+                  <span class="menu-icon lnr lnr-book"></span>
+                  <span class="link-text">Blog</span>
+                </a>
+              </li>
+              {% endif %}
+              <li>
+                <a href="#contact" class="nav-anim">
+                  <span class="menu-icon lnr lnr-envelope"></span>
+                  <span class="link-text">Contacto</span>
+                </a>
+              </li>
+            </ul>
+            {% if site.data.resume.social-links %}
+            <div class="social-links">
+              <ul>
+                {% for link in site.data.resume.social-links %}
+                <li><a href="{{ link.url }}" target="_blank"><i class="fab fa-{{ link.icon }}"></i></a></li>
+                {% endfor %}
+              </ul>
+            </div>
+            {% endif %}
+            <div class="header-buttons">
+              <a href="assets/resume/{{ site.data.resume.cv }}" target="_blank" class="btn btn-primary">Download CV</a>
+            </div>
+
+            <div class="copyrights">© {{ "now" | date: "%Y" }} All rights reserved.</div>
+          </header>
+
+          <!-- Mobile Navigation -->
+          <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <!-- End Mobile Navigation -->
+
+          <!-- Arrows Nav -->
+          <div class="lmpixels-arrows-nav">
+            <div class="lmpixels-arrow-right"><i class="lnr lnr-chevron-right"></i></div>
+            <div class="lmpixels-arrow-left"><i class="lnr lnr-chevron-left"></i></div>
+          </div>
+          <!-- End Arrows Nav -->
+
+          <div class="content-area">
+            <div class="animated-sections">
+              <!-- Home Subpage -->
+              <section data-id="home" class="animated-section start-page">
+                <div class="section-content vcentered">
+
+                    <div class="row">
+                      <div class="col-sm-12 col-md-12 col-lg-12">
+                        <div class="title-block">
+                          <h2>{{ site.data.resume.name }}</h2>
+                          <div class="owl-carousel text-rotation">  
+                            {% for title in site.data.resume.titles %}                                  
+                              <div class="item">
+                                <div class="sp-subtitle">{{ title }}</div>
+                              </div>
+                            {% endfor %}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                </div>
+              </section>
+              <!-- End of Home Subpage -->
+
+              <!-- About Me Subpage -->
+              <section data-id="about-me" class="animated-section">
+                <div class="section-content">
+                  <div class="page-title">
+                    <h2>Sobre <span>Mi</span></h2>
+                  </div>
+
+                  <!-- Personal Information -->
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-7">
+                      <p>{{ site.data.resume.about-me }}</p>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-5">
+                      <div class="info-list">
+                        <ul>
+                          {% if site.data.resume.age %}
+                          <li>
+                            <span class="title">Edad</span>
+                            <span class="value">{{ 'now' | date: '%Y' | minus: site.data.resume.age }}</span>
+                          </li>
+                          {% endif %}
+
+                          {% if site.data.resume.residence %}
+                          <li>
+                            <span class="title">Residencia</span>
+                            <span class="value">{{ site.data.resume.residence }}</span>
+                          </li>
+                          {% endif %}
+
+                          {% if site.data.resume.nationality %}
+                          <li>
+                            <span class="title">Nacionalidad</span>
+                            <span class="value">{{ site.data.resume.nationality }}</span>
+                          </li>
+                          {% endif %}
+
+                          {% if site.data.resume.adress %}
+                          <li>
+                            <span class="title">Dirección</span>
+                            <span class="value">{{ site.data.resume.adress }}</span>
+                          </li>
+                          {% endif %}
+
+                          {% if site.data.resume.email %}
+                          <li>
+                            <span class="title">e-mail</span>
+                            <span class="value">{{ site.data.resume.email }}</span>
+                          </li>
+                          {% endif %}
+
+                          {% if site.data.resume.phone %}
+                          <li>
+                            <span class="title">Teléfono</span>
+                            <span class="value">{{ site.data.resume.phone }}</span>
+                          </li>
+                          {% endif %}
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End of Personal Information -->
+                  <div class="white-space-50"></div>
+                  {% if site.data.resume.services %}
+                  <!-- Services -->
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                      <div class="block-title">
+                        <h3>Mis <span>Servicios</span></h3>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                      <div class="col-inner">
+                        <div class="info-list-w-icon">
+                        {% if site.data.resume.services[0] %}
+                          <div class="info-block-w-icon">
+                            <div class="ci-icon">
+                              <i class="lnr lnr-{{ site.data.resume.services[0].icon }}"></i>
+                            </div>
+                            <div class="ci-text">
+                              <h4>{{ site.data.resume.services[0].title }}</h4>
+                              <p>{{ site.data.resume.services[0].description  }}</p>
+                            </div>
+                          </div>
+                        {% endif %}
+                          
+                        {% if site.data.resume.services[2] %}
+                          <div class="info-block-w-icon">
+                            <div class="ci-icon">
+                              <i class="lnr lnr-{{ site.data.resume.services[2].icon }}"></i>
+                            </div>
+                            <div class="ci-text">
+                              <h4>{{ site.data.resume.services[2].title }}</h4>
+                              <p>{{ site.data.resume.services[2].description  }}</p>
+                            </div>
+                          </div>
+                        {% endif %}
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6">
+                      <div class="col-inner">
+                        <div class="info-list-w-icon">
+                        {% if site.data.resume.services[1] %}
+                          <div class="info-block-w-icon">
+                            <div class="ci-icon">
+                              <i class="lnr lnr-{{ site.data.resume.services[1].icon }}"></i>
+                            </div>
+                            <div class="ci-text">
+                              <h4>{{ site.data.resume.services[1].title }}</h4>
+                              <p>{{ site.data.resume.services[1].description  }}</p>
+                            </div>
+                          </div>
+                        {% endif %}
+                          
+                        {% if site.data.resume.services[3] %}
+                          <div class="info-block-w-icon">
+                            <div class="ci-icon">
+                              <i class="lnr lnr-{{ site.data.resume.services[3].icon }}"></i>
+                            </div>
+                            <div class="ci-text">
+                              <h4>{{ site.data.resume.services[3].title }}</h4>
+                              <p>{{ site.data.resume.services[3].description  }}</p>
+                            </div>
+                          </div>
+                        {% endif %}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End of Services -->
+
+                  <div class="white-space-30"></div>
+                {% endif %}
+                {% if site.data.resume.testimonials %}
+                  <!-- Testimonials -->
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                      <div class="block-title">
+                        <h3>Testimonials</h3>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                      <div class="testimonials owl-carousel">
+                        <!-- Testimonial 1 -->
+                        <div class="testimonial">
+                          <div class="img">
+                            <img src="assets/resume/img/testimonials/testimonial-1.jpg" alt="{{ site.data.resume.name }}">
+                          </div>
+                          <div class="text">
+                            <p>Vivamus at molestie dui, eu ornare orci. Curabitur vel egestas dolor. Nulla condimentum nunc sit amet urna tempus finibus. Duis mollis leo id ligula pellentesque, at vehicula dui ultrices.</p>
+                          </div>
+
+                          <div class="author-info">
+                            <h4 class="author">Julia Hickman</h4>
+                            <h5 class="company">Omni Source</h5>
+                            <div class="icon">
+                              <i class="fas fa-quote-right"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End of Testimonial 1 -->
+
+                        <!-- Testimonial 2 -->
+                        <div class="testimonial">
+                          <div class="img">
+                            <img src="assets/resume/img/testimonials/testimonial-2.jpg" alt="{{ site.data.resume.name }}">
+                          </div>
+                          <div class="text">
+                            <p>Vivamus at molestie dui, eu ornare orci. Curabitur vel egestas dolor. Nulla condimentum nunc sit amet urna tempus finibus. Duis mollis leo id ligula pellentesque, at vehicula dui ultrices.</p>
+                          </div>
+
+                          <div class="author-info">
+                            <h4 class="author">Robert Watkins</h4>
+                            <h5 class="company">Endicott Shoes</h5>
+                            <div class="icon">
+                              <i class="fas fa-quote-right"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End of Testimonial 2 -->
+
+                        <!-- Testimonial 3 -->
+                        <div class="testimonial">
+                          <div class="img">
+                            <img src="assets/resume/img/testimonials/testimonial-3.jpg" alt="{{ site.data.resume.name }}">
+                          </div>
+                          <div class="text">
+                            <p>Vivamus at molestie dui, eu ornare orci. Curabitur vel egestas dolor. Nulla condimentum nunc sit amet urna tempus finibus. Duis mollis leo id ligula pellentesque, at vehicula dui ultrices.</p>
+                          </div>
+
+                          <div class="author-info">
+                            <h4 class="author">Kristin Carroll</h4>
+                            <h5 class="company">Helping Hand</h5>
+                            <div class="icon">
+                              <i class="fas fa-quote-right"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End of Testimonial 3 -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End of Testimonials -->
+
+                  <div class="white-space-50"></div>
+                {% endif %}
+                {% if site.data.resume.clients %}
+                  <!-- Clients -->
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                      <div class="block-title">
+                        <h3>Cilentes</h3>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                      <div class="clients owl-carousel">
+                        
+                      {% for client in site.data.resume.clients %}
+                        <div class="client-block">
+                          <a href="{{ client.url }}" target="_blank" title="Logo">
+                            <img src="assets/resume/img/clients/{{ client.logo }}" alt="Logo">
+                          </a>
+                        </div>
+                      {% endfor %}
+  
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End of Clients -->
+                  {% endif %}
+                  {% if site.data.resume.facts %}
+                  <div class="white-space-50"></div>
+                  <!-- Fun Facts -->
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+
+                      <div class="block-title">
+                        <h3>Fun <span>Facts</span></h3>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-4">
+                      <div class="fun-fact gray-default">
+                        <i class="lnr lnr-heart"></i>
+                        <h4>Happy Clients</h4>
+                        <span class="fun-fact-block-value">578</span>
+                        <span class="fun-fact-block-text"></span>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-4">
+                      <div class="fun-fact gray-default">
+                        <i class="lnr lnr-clock"></i>
+                        <h4>Working Hours</h4>
+                        <span class="fun-fact-block-value">4,780</span>
+                        <span class="fun-fact-block-text"></span>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-4 ">
+                      <div class="fun-fact gray-default">
+                        <i class="lnr lnr-star"></i>
+                        <h4>Awards Won</h4>
+                        <span class="fun-fact-block-value">15</span>
+                        <span class="fun-fact-block-text"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End of Fun Facts -->
+                  {% endif %}
+                </div>
+              </section>
+              <!-- End of About Me Subpage -->
+
+              <!-- Resume Subpage -->
+              <section data-id="resume" class="animated-section">
+                <div class="section-content">
+                  <div class="page-title">
+                    <h2>Resume</h2>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-7">
+                    {% if site.data.resume.experiences %}
+                      <div class="block-title">
+                        <h3>Experience</h3>
+                      </div>
+
+                      <div class="timeline timeline-second-style clearfix">
+                      {% for experience in site.data.resume.experiences %}
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">{{ experience.from }} - {{ experience.to }}</h5>
+                            <span class="item-company">{{ experience.company }}</span>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title">{{ experience.title }}</h4>
+                            <p>{{ experience.description }}</p>
+                          </div>
+                        </div>
+                      {% endfor %}
+                      </div>
+                      
+                      <div class="white-space-50"></div>
+                      {% endif %}
+                      {% if site.data.resume.education %}
+                      <div class="block-title">
+                        <h3>Education</h3>
+                      </div>
+                      
+                      <div class="timeline timeline-second-style clearfix">
+                        {% for education in site.data.resume.education %}
+                        <div class="timeline-item clearfix">
+                          <div class="left-part">
+                            <h5 class="item-period">{{ education.date }}</h5>
+                            <span class="item-company">{{ education.institution }}</span>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right-part">
+                            <h4 class="item-title">{{ education.title }}</h4>
+                            <p>{{ education.description }}</p>
+                          </div>
+                        </div>
+                        {% endfor %}
+                      </div>
+                      {% endif %}
+                    </div>
+
+                    <!-- Skills & Certificates -->
+                    <div class="col-xs-12 col-sm-5">
+                      <!-- Skills -->
+                      <div class="block-title">
+                        <h3><span>Competencias</span></h3>
+                      </div>
+
+                      <div class="skills-info skills-second-style">
+                      {% for skill in site.data.resume.skills %}
+                        <!-- Skill 1 -->
+                        <div class="skill clearfix">
+                          <h4>{{ skill.title }}</h4>
+                          <div class="skill-value">{{ skill.percent }}%</div>
+                        </div>
+                        <div class="skill-container skill-1">
+                          <div class="skill-percentage" style="width: {{ skill.percent }}%!important;"></div>
+                        </div>
+                        <!-- End of Skill 1 -->
+                      {% endfor %}
+                      </div>
+                      <!-- End of Skills -->
+
+                      <div class="white-space-10"></div>
+
+                      <!-- language Skills -->
+                      <div class="block-title">
+                        <h3><span>Idiomas</span></h3>
+                      </div>
+
+                      <div class="skills-info skills-second-style">
+                      {% for language in site.data.resume.languages %}
+                        <!-- Skill 1 -->
+                        <div class="skill clearfix">
+                          <h4>{{ language.language }}</h4>
+                          <div class="skill-value">{{ language.percent }}%</div>
+                        </div>
+                        <div class="skill-container skill-1">
+                          <div class="skill-percentage" style="width: {{ language.percent }}%!important;"></div>
+                        </div>
+                        <!-- End of Skill 1 -->
+                      {% endfor %}
+                      </div>
+                      <!-- End of language Skills -->
+
+                      <div class="white-space-10"></div>
+                      <!-- Knowledges -->
+                      {% if site.data.resume.knowledges %}
+                      <div class="block-title">
+                        <h3>Conocimientos</h3>
+                      </div>
+                      <ul class="knowledges">
+                        {% for knowledge in site.data.resume.knowledges %}
+                          <li>{{ knowledge }}</li>
+                        {% endfor %}
+                      </ul>
+                      {% endif %}
+                      <!-- End of Knowledges -->
+                    </div>
+                    <!-- End of Skills & Certificates -->
+                  </div>
+
+                  <div class="white-space-50"></div>
+
+                  {% if site.data.resume.certificates %}
+                  <!-- Certificates -->
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                      <div class="block-title">
+                        <h3>Certificates</h3>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="row">
+                    <!-- Certificate 1 -->
+                    <div class="col-xs-12 col-sm-6">
+                      <div class="certificate-item clearfix">
+                        <div class="certi-logo">
+                          <img src="assets/resume/img/clients/client-1.png" alt="logo">
+                        </div>
+                        
+                        <div class="certi-content">
+                          <div class="certi-title">
+                            <h4>Psyhology of Intertnation Design</h4>
+                          </div>
+                          <div class="certi-id">
+                            <span>Membership ID: XXXX</span>
+                          </div>
+                          <div class="certi-date">
+                            <span>19 April 2018</span>
+                          </div>
+                          <div class="certi-company">
+                            <span></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End of Certificate 1 -->
+
+                    <!-- Certificate 2 -->
+                    <div class="col-xs-12 col-sm-6">
+                      <div class="certificate-item clearfix">
+                        <div class="certi-logo">
+                          <img src="assets/resume/img/clients/client-1.png" alt="logo">
+                        </div>
+                        
+                        <div class="certi-content">
+                          <div class="certi-title">
+                            <h4>Psyhology of Intertnation Design</h4>
+                          </div>
+                          <div class="certi-id">
+                            <span>Membership ID: XXXX</span>
+                          </div>
+                          <div class="certi-date">
+                            <span>19 April 2018</span>
+                          </div>
+                          <div class="certi-company">
+                            <span></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End of Certificate 2 -->
+
+                  </div>
+                  <!-- End of Certificates -->
+                  {% endif  %}
+                </div>
+              </section>
+              <!-- End of Resume Subpage -->
+
+              {% if site.data.resume.portfolio %}
+              <!-- Portfolio Subpage -->
+              <section data-id="portfolio" class="animated-section">
+                <div class="section-content">
+                  <div class="page-title">
+                    <h2>Portfolio</h2>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                      <!-- Portfolio Content -->
+                      <div class="portfolio-content">
+
+                        {%- comment -%} <ul class="portfolio-filters">
+                          <li class="active">
+                            <a class="filter btn btn-sm btn-link" data-group="category_all">All</a>
+                          </li>
+                          <li>
+                            <a class="filter btn btn-sm btn-link" data-group="category_detailed">Detailed</a>
+                          </li>
+                          <li>
+                            <a class="filter btn btn-sm btn-link" data-group="category_mockups">Mockups</a>
+                          </li>
+                          <li>
+                            <a class="filter btn btn-sm btn-link" data-group="category_soundcloud">SoundCloud</a>
+                          </li>
+                          <li>
+                            <a class="filter btn btn-sm btn-link" data-group="category_vimeo-videos">Vimeo Videos</a>
+                          </li>
+                          <li>
+                            <a class="filter btn btn-sm btn-link" data-group="category_youtube-videos">YouTube Videos</a>
+                          </li>
+                        </ul> {%- endcomment -%}
+
+                        <!-- Portfolio Grid -->
+                        <div class="portfolio-grid three-columns">
+                          {% for project in site.data.resume.portfolio %}
+                          <figure class="item lbimage" data-groups='["category_all", "category_mockups"]'>
+                            <div class="portfolio-item-img">
+                              <img src="assets/resume/img/portfolio/{{ project.img }}" alt="{{ project.title }}" title="" />
+                              <a class="lightbox" title="{{ project.title }}" href="assets/resume/img/portfolio/{{ project.img }}"></a>
+                            </div>
+
+                            <i class="far fa-image"></i>
+                            <h4 class="name">{{ project.title }}</h4>
+                            {%- comment -%} <span class="category">{{ project.img }}</span> {%- endcomment -%}
+                          </figure>
+                          {% endfor %}
+                          {%- comment -%} <figure class="item lbaudio" data-groups='["category_all", "category_soundcloud"]'>
+                            <div class="portfolio-item-img">
+                              <img src="assets/resume/img/portfolio/1.jpg" alt="SoundCloud Audio" title="" />
+                              <a href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/221650664&#038;color=%23ff5500&#038;auto_play=false&#038;hide_related=false&#038;show_comments=true&#038;show_user=true&#038;show_reposts=false&#038;show_teaser=true&#038;visual=true" class="lightbox mfp-iframe" title="SoundCloud Audio"></a>
+                            </div>
+
+                            <i class="fa fa-volume-up"></i>
+                            <h4 class="name">SoundCloud Audio</h4>
+                            <span class="category">SoundCloud</span>
+                          </figure> {%- endcomment -%}
+
+                          {%- comment -%} <figure class="item standard" data-groups='["category_all", "category_detailed"]'>
+                            <div class="portfolio-item-img">
+                              <img src="img/portfolio/2.jpg" alt="Media Project 2" title="" />
+                              <a href="portfolio-1.html" class="ajax-page-load"></a>
+                            </div>
+
+                            <i class="far fa-file-alt"></i>
+                            <h4 class="name">Detailed Project 2</h4>
+                            <span class="category">Detailed</span>
+                          </figure> {%- endcomment -%}
+
+                          {%- comment -%} <figure class="item lbvideo" data-groups='["category_all", "category_vimeo-videos"]'>
+                            <div class="portfolio-item-img">
+                              <img src="img/portfolio/3.jpg" alt="Vimeo Video 1" title="" />
+                              <a href="https://player.vimeo.com/video/158284739" class="lightbox mfp-iframe" title="Vimeo Video 1"></a>
+                            </div>
+
+                            <i class="fas fa-video"></i>
+                            <h4 class="name">Vimeo Video 1</h4>
+                            <span class="category">Vimeo Videos</span>
+                          </figure> {%- endcomment -%}
+
+                          {%- comment -%} <figure class="item standard" data-groups='["category_all", "category_detailed"]'>
+                            <div class="portfolio-item-img">
+                              <img src="img/portfolio/4.jpg" alt="Media Project 1" title="" />
+                              <a href="portfolio-1.html" class="ajax-page-load"></a>
+                            </div>
+
+                            <i class="far fa-file-alt"></i>
+                            <h4 class="name">Detailed Project 1</h4>
+                            <span class="category">Detailed</span>
+                          </figure> {%- endcomment -%}
+{%- comment -%} 
+                          <figure class="item lbimage" data-groups='["category_all", "category_mockups"]'>
+                            <div class="portfolio-item-img">
+                              <img src="img/portfolio/5.jpg" alt="Mockup Design 1" title="" />
+                              <a class="lightbox" title="Mockup Design 1" href="img/portfolio/full/5.jpg"></a>
+                            </div>
+
+                            <i class="far fa-image"></i>
+                            <h4 class="name">Mockup Design 1</h4>
+                            <span class="category">Mockups</span>
+                          </figure> {%- endcomment -%}
+
+                          {%- comment -%} <figure class="item lbvideo" data-groups='["category_all", "category_youtube-videos"]'>
+                            <div class="portfolio-item-img">
+                              <img src="img/portfolio/6.jpg" alt="YouTube Video 1" title="" />
+                              <a href="https://www.youtube.com/embed/bg0gv2YpIok" class="lightbox mfp-iframe" title="YouTube Video 1"></a>
+                            </div>
+
+                            <i class="fas fa-video"></i>
+                            <h4 class="name">YouTube Video 1</h4>
+                            <span class="category">YouTube Videos</span>
+                          </figure> {%- endcomment -%}
+                        </div>
+                      </div>
+                      <!-- End of Portfolio Content -->
+                      {% endif %}
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <!-- End of Portfolio Subpage -->
+
+              <!-- Blog Subpage -->
+              <section data-id="blog" class="animated-section">
+                <div class="section-content">
+                  <div class="page-title">
+                    <h2>Blog</h2>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                      <div class="blog-masonry two-columns clearfix">
+                        
+                        <!-- Blog Post 1 -->
+                        <div class="item post-1">
+                          <div class="blog-card">
+                            <div class="media-block">
+                              <div class="category">
+                                <a href="#" title="View all posts in Design">Design</a>
+                              </div>
+                              <a href="blog-post-1.html">
+                                <img src="img/blog/blog_post_1.jpg" class="size-blog-masonry-image-two-c" alt="Why I Switched to Sketch For UI Design" title="" />
+                                <div class="mask"></div>
+                              </a>
+                            </div>
+                            <div class="post-info">
+                              <div class="post-date">05 Mar 2020</div>
+                              <a href="blog-post-1.html">
+                                <h4 class="blog-item-title">Why I Switched to Sketch For UI Design</h4>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End of Blog Post 1 -->
+
+                        <!-- Blog Post 2 -->
+                        <div class="item post-2">
+                          <div class="blog-card">
+                            <div class="media-block">
+                              <div class="category">
+                                <a href="#" title="View all posts in UI">UI</a>
+                              </div>
+                              <a href="blog-post-1.html">
+                                <img src="img/blog/blog_post_2.jpg" class="size-blog-masonry-image-two-c" alt="Best Practices for Animated Progress Indicators" title="" />
+                                <div class="mask"></div>
+                              </a>
+                            </div>
+                            <div class="post-info">
+                              <div class="post-date">23 Feb 2020</div>
+                              <a href="blog-post-1.html">
+                                <h4 class="blog-item-title">Best Practices for Animated Progress Indicators</h4>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End of Blog Post 2 -->
+
+                        <!-- Blog Post 3 -->
+                        <div class="item post-1">
+                          <div class="blog-card">
+                            <div class="media-block">
+                              <div class="category">
+                                <a href="#" title="View all posts in Design">Design</a>
+                              </div>
+                              <a href="blog-post-1.html">
+                                <img src="img/blog/blog_post_3.jpg" class="size-blog-masonry-image-two-c" alt="Designing the Perfect Feature Comparison Table" title="" />
+                                <div class="mask"></div>
+                              </a>
+                            </div>
+                            <div class="post-info">
+                              <div class="post-date">06 Feb 2020</div>
+                              <a href="blog-post-1.html">
+                                <h4 class="blog-item-title">Designing the Perfect Feature Comparison Table</h4>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End of Blog Post 3 -->
+
+                        <!-- Blog Post 4 -->
+                        <div class="item post-2">
+                          <div class="blog-card">
+                            <div class="media-block">
+                              <div class="category">
+                                <a href="#" title="View all posts in E-Commerce">UI</a>
+                              </div>
+                              <a href="blog-post-1.html">
+                                <img src="img/blog/blog_post_4.jpg" class="size-blog-masonry-image-two-c" alt="An Overview of E-Commerce Platforms" title="" />
+                                <div class="mask"></div>
+                              </a>
+                            </div>
+                            <div class="post-info">
+                              <div class="post-date">07 Jan 2020</div>
+                              <a href="blog-post-1.html">
+                                <h4 class="blog-item-title">An Overview of E-Commerce Platforms</h4>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End of Blog Post 4 -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </section>
+              <!-- End of Blog Subpage -->
+
+              <!-- Contact Subpage -->
+              <section data-id="contact" class="animated-section">
+                <div class="section-content">
+                  <div class="page-title">
+                    <h2>Contacto</h2>
+                  </div>
+
+                  <div class="row">
+                    <!-- Contact Info -->
+                    <div class="col-xs-12 col-sm-12">
+                      <div class="lm-info-block gray-default">
+                        <i class="lnr lnr-map-marker"></i>
+                        <h4>{{ site.data.resume.available-location }}</h4>
+                        <span class="lm-info-block-value"></span>
+                        <span class="lm-info-block-text"></span>
+                      </div>
+
+                      <div class="lm-info-block gray-default">
+                        <i class="lnr lnr-phone-handset"></i>
+                        <h4>{{ site.data.resume.phone }}</h4>
+                        <span class="lm-info-block-value"></span>
+                        <span class="lm-info-block-text"></span>
+                      </div>
+
+                      <div class="lm-info-block gray-default">
+                        <i class="lnr lnr-envelope"></i>
+                        <h4>{{ site.data.resume.email }}</h4>
+                        <span class="lm-info-block-value"></span>
+                        <span class="lm-info-block-text"></span>
+                      </div>
+
+                      <div class="lm-info-block gray-default">
+                        <i class="lnr lnr-checkmark-circle"></i>
+                        <h4>{{ site.data.resume.available }}</h4>
+                        <span class="lm-info-block-value"></span>
+                        <span class="lm-info-block-text"></span>
+                      </div>
+
+
+                    </div>
+                  </div>
+
+                </div>
+              </section>
+              <!-- End of Contact Subpage -->
+            </div>
+          </div>
+
+      </div>
+    </div>
+
+    <script src="assets/resume/js/jquery.min.js"></script>
+    <script src="assets/resume/js/modernizr.custom.js"></script>
+    <script src="assets/resume/js/animating.js"></script>
+
+    <script src="assets/resume/js/imagesloaded.pkgd.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
+    <script src='assets/resume/js/perfect-scrollbar.min.js'></script>
+    <script src='assets/resume/js/jquery.shuffle.min.js'></script>
+    <script src='assets/resume/js/masonry.pkgd.min.js'></script>
+    <script src='assets/resume/js/owl.carousel.min.js'></script>
+    <script src="assets/resume/js/jquery.magnific-popup.min.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrDf32aQTCVENBhFJbMBKOUTiUAABtC2o"></script>
+    <script src="assets/resume/js/jquery.googlemap.js"></script>
+    <script src="assets/resume/js/validator.js"></script>
+    <script src="assets/resume/js/main.js"></script>
+  </body>
+</html>

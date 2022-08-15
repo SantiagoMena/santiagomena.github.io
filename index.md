@@ -1,6 +1,4 @@
 ---
-layout: default
-title: "Hello World"
+layout: resume
+title: "Santiago Mena - Resume"
 ---
-
-## Hello World with Jekyll
