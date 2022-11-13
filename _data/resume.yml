@@ -127,6 +127,7 @@ clients:
   - {logo: "vital.png", url: "https://vitalpropiedades.com.ar/"}
   - {logo: "contenidos-digitales.svg", url: "https://contenidos-digitales.com/"}
   - {logo: "kickads.png", url: "https://kickads.mobi/"}
+  - {logo: "litteratorum.png", url: "https://www.litteratorum.com/"}
 services:
   - {
       title: "Desarrollo Web",
