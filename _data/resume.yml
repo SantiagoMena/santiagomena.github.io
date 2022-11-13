@@ -178,6 +178,10 @@ portfolio:
       title: "Vazquez Propiedades",
       img: "vazquez.jpeg"
     }
+  - {
+      title: "Litteratorum",
+      img: "litteratorum.jpeg"
+    }
 languages:
   - {language: "Español", percent: 100}
   - {language: "Inglés", percent: 30}
