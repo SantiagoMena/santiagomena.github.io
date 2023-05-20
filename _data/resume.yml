@@ -1,24 +1,25 @@
 name: "Santiago Mena Peña"
-title: "FullStack Developer"
-cv: "1CV_SantiagoMena_FullStack.pdf"
+title: "Desarrollador FullStack"
+cv: "EV_SantiagoMena_FullStack_PHP_NODE_GO_JS.pdf"
 titles:
-  - "FullStack Developer"
+  - "FullStack Software Developer"
   - "PHP Developer"
   - "Symfony Developer"
   - "Laravel Developer"
   - "Codeignitier Developer"
   - "NodeJS Developer"
   - "ReactNative Developer"
+  - "Flutter Developer"
   - "App Developer"
   - "API Developer"
-about-me: "Cuento con + de 8 años de experiencia como Desarrollador Web en diferentes tecnologías, destacándose PHP, NodeJS y JavaScript, habiendo trabajado para diferentes proyectos y clientes. Tengo gran interés y entusiasmo por aprender nuevas tecnologías, explorar nuevos campos de trabajo y enfrentar diferentes desafíos. Soy perseverante, analítico, enérgico, autodidáctico y motivado por crecer día a día."
+about-me: "With more than 9 years of experience as a Web Developer in technologies such as PHP, NodeJS, GoLang and JavaScript, I have worked on diverse projects and with varied clients. I am passionate about learning new technologies, exploring different fields of work and facing constant challenges. My perseverance, analytical skills, energy and self-taught approach motivate me to grow and improve continuously."
 age: 1995
 residence: "Argentina"
 nationality: "Colombia"
 email: "santiagomenape@gmail.com"
 phone: "+5491128757248"
 available-location: "Remote"
-available: "Disponibilidad Freelance"
+available: "Freelance Availability"
 social-links:
   - {icon: "linkedin-in", url: "https://www.linkedin.com/in/santiagomenap/"}
   - {icon: "github", url: "https://github.com/SantiagoMena/"}
@@ -26,12 +27,14 @@ social-links:
   - {icon: "whatsapp", url: "https://wa.me/5491128757248"}
 knowledges:
   - "PHP"
+  - "GO"
   - "Symfony"
   - "Laravel"
   - "Yii"
   - "Codeignitier"
   - "React"
   - "React Native"
+  - "Flutter"
   - "Redux"
   - "Express.js"
   - "MySQL"
@@ -48,76 +51,83 @@ knowledges:
   - "Yaml"
   - "GIT"
 skills:
-  - {title: "Desarrollo Backend", percent: 93}
-  - {title: "Desarrollo Frontend", percent: 45}
-  - {title: "Desarrollo de Aplicaciones", percent: 50}
-  - {title: "Bases de Datos", percent: 65}
-  - {title: "Gestión de Proyectos", percent: 67}
-  - {title: "Refactorización", percent: 40}
-  - {title: "Test Unitarios", percent: 60}
-  - {title: "Patrones de Diseño", percent: 40}
+  - {title: "Backend Development", percent: 93}
+  - {title: "Frontend Development", percent: 45}
+  - {title: "Application Development", percent: 50}
+  - {title: "Databases", percent: 65}
+  - {title: "Project Management", percent: 67}
+  - {title: "Refactoring", percent: 40}
+  - {title: "Unit Testing", percent: 60}
+  - {title: "Design Patterns", percent: 40}
   - {title: "SOLID", percent: 50}
 experiences:
   - {
-      title: "Programador Web Full Stack",
+      title: "Full Stack Web Programmer",
       company: "UNOPS",
-      description: "Proyecto: Desarrollo en Symfony para el Ministerio de Educación de la Ciudad Autónoma de Buenos Aires",
+      description: "I developed software for the Ministry of Education of the Government of the City of Buenos Aires. My work consisted in the creation of new systems using Symfony and Laravel technologies. In addition, I carried out SOAP integrations with AFIP, Argentina's tax agency.",
       from: "2021",
-      to: "Presente"
+      to: "2023"
     }
   - {
-      title: "Programador Sr Full Stack", 
+      title: "Full Stack Programmer", 
+      company: "Petbnb.nl",
+      description: "My accomplishments include the successful migration of the web system to a REST API, the successful integration of various APIs such as Sendbird, Twilio, OBP Payments and BigQuery, the implementation of ElasticSearch to optimize searches and the extraction and processing of data to generate reports in Looker/Datastudio, which allowed to better understand the business movements.",
+      from: "2020",
+      to: "2023"
+    }
+  - {
+      title: "Full Stack Programmer", 
       company: "A1500",
-      description: "Proyecto: Backoffice de administración para la plataforma Seeconds (red social tipo TikTok)",
+      description: "I developed the administration backoffice for Seeconds, a platform similar to TikTok, allowing to efficiently manage and administer the application.",
       from: "2021",
       to: "2021"
     }
   - {
-      title: "Programador Sr Full Stack", 
+      title: "Full Stack Programmer", 
       company: "Ojiva.es",
-      description: "Proyecto: Mejoras en el backoffice y aplicación de red social de pescadores",
+      description: "I developed improvements in the backoffice and application of a social network dedicated to fishermen, optimizing its operation and user experience.",
       from: "2021",
       to: "2021"
     }
   - {
-      title: "Lider Técnico", 
+      title: "Technical Leader", 
       company: "Alberione Ingeniería de Sistemas",
-      description: "Proyecto: Sistema de formularios para la provincia de Santa Fé",
+      description: "Led a team of 3 developers to develop a system of forms for the province of Santa Fe",
       from: "2021",
       to: "2021"
     }
   - {
-      title: "Desarrollador Full Stack", 
+      title: "Full Stack Developer", 
       company: "DeOliva S.R.L.",
-      description: "Proyectos: Desarrollo de APIs y backoffice para un mapa de lotes interactivo, desarrollo de APIs para anuncios en Spotify",
+      description: "I developed APIs and backoffice for an interactive batch map. In addition, I created APIs for Spotify ad management.",
       from: "2018",
-      to: "2021"
+      to: "2023"
     }
   - {
-      title: "Desarrollador Full Stack", 
+      title: "Full Stack Developer", 
       company: "Kickads.mobi",
-      description: "Proyecto: Desarrollo de un adserver de públicidad, integración de APIs de adnetworks",
+      description: "Developed an advertising adserver with integration of adnetworks APIs.",
       from: "2015",
       to: "2018"
     }
 education:
   - {
-      title: "Programa Ejecutivo en Project Management",
+      title: "Executive Program in Project Management",
       date: "2019",
-      institution: "Universidad Tecnológica Nacional",
-      description: "Diplomatura en gestión de proyectos en base a PMI y PMBOK"
+      institution: "National Technological University",
+      description: "Diploma in Project Management based on PMI and PMBOK"
     }
   - {
       title: "Programador Web Avanzado",
       date: "2015",
-      institution: "Universidad Tecnológica Nacional",
-      description: "Diplomatura en Programación Web Avanzada"
+      institution: "National Technological University",
+      description: "Diploma in Advanced Web Programming"
     }
   - {
-      title: "Ingeniería de Sistemas",
+      title: "Systems Engineering",
       date: "2013",
       institution: "Universidad De Los Llanos",
-      description: "Programa en Ingeniería de Sistemas - no concluido"
+      description: "Systems Engineering Program - not concluded"
     }
 clients:
   - {logo: "petbnb.png", url: "https://petbnb.nl/"}
@@ -130,23 +140,23 @@ clients:
   - {logo: "litteratorum.png", url: "https://www.litteratorum.com/"}
 services:
   - {
-      title: "Desarrollo Web",
-      description: "Desarrollo de sistemas y paginas en internet",
+      title: "Web Development",
+      description: "I offer services of autonomous development, creating customized systems and web pages, providing solutions tailored to the needs of each client.",
       icon: "laptop-phone"
     }
   - {
-      title: "Migración de sistemas Legacy",
-      description: "Migración de sistemas legacy, herados o antiguos, a nuevos frameworks",
+      title: "Migration of Legacy systems",
+      description: "Migration of legacy, legacy or legacy systems to new frameworks",
       icon: "code"
     }
   - {
-      title: "Desarrollo de aplicaciones",
-      description: "Desarrollo de aplicaciones hibridas en React Native",
+      title: "Application development",
+      description: "Hybrid app development in React Native or Flutter",
       icon: "smartphone"
     }
   - {
-      title: "Desarrollo y Sincronización de APIs",
-      description: "Desarrollo y sincronización entre APIs de servidores propios y de terceros",
+      title: "API Development and Synchronization",
+      description: "Development and synchronization between in-house and third-party server APIs",
       icon: "cloud-sync"
     }
 portfolio:
@@ -163,23 +173,23 @@ portfolio:
       img: "hook.jpeg"
     }
   - {
-      title: "Bambic Propiedades",
+      title: "Bambic Real Estate",
       img: "bambic.jpeg"
     }
   - {
-      title: "Braña Propiedades",
+      title: "Braña Real Estate",
       img: "brana.jpeg"
     }
   - {
-      title: "Lugano Vive",
+      title: "Lugano Vive Real Estate",
       img: "luganovive.jpeg"
     }
   - {
-      title: "Vital Propiedades",
+      title: "Vital Real Estate",
       img: "vital.jpeg"
     }
   - {
-      title: "Vazquez Propiedades",
+      title: "Vazquez Real Estate",
       img: "vazquez.jpeg"
     }
   - {
@@ -187,5 +197,5 @@ portfolio:
       img: "litteratorum.jpeg"
     }
 languages:
-  - {language: "Español", percent: 100}
-  - {language: "Inglés", percent: 30}
+  - {language: "Spanish", percent: 100}
+  - {language: "English", percent: 50}
