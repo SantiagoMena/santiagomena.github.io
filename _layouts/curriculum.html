@@ -50,11 +50,11 @@
           <header id="site_header" class="header mobile-menu-hide">
             <div class="header-content">
               <div class="header-photo">
-                <img src="assets/resume/img/main_photo.jpg" alt="{{ site.data.resume.name }}">
+                <img src="assets/resume/img/main_photo.jpg" alt="{{ site.data.curriculum.name }}">
               </div>
               <div class="header-titles">
-                <h2>{{ site.data.resume.name }}</h2>
-                <h4>{{ site.data.resume.title }}</h4>
+                <h2>{{ site.data.curriculum.name }}</h2>
+                <h4>{{ site.data.curriculum.title }}</h4>
               </div>
             </div>
 
@@ -98,21 +98,21 @@
                 </a>
               </li>
             </ul>
-            {% if site.data.resume.social-links %}
+            {% if site.data.curriculum.social-links %}
             <div class="social-links">
               <ul>
-                {% for link in site.data.resume.social-links %}
+                {% for link in site.data.curriculum.social-links %}
                 <li><a href="{{ link.url }}" target="_blank"><i class="fab fa-{{ link.icon }}"></i></a></li>
                 {% endfor %}
               </ul>
             </div>
             {% endif %}
             <div class="header-buttons">
-              <a href="assets/resume/{{ site.data.resume.cv }}" target="_blank" class="btn btn-primary">Download CV</a>
+              <a href="assets/resume/{{ site.data.curriculum.cv }}" target="_blank" class="btn btn-primary">Descargar CV</a>
+              <h5>[<a href="/curriculum"> 🇪🇸 ES </a>|<a href="/index"> EN 🇬🇧 </a>]</h5>
             </div>
 
-            <h5>[<a href="/curriculum"> 🇪🇸 ES </a>|<a href="/index"> EN 🇬🇧 </a>]</h5>
-            <!-- <div class="copyrights">© {{ "now" | date: "%Y" }} All rights reserved.</div> -->
+            <!-- <div class="copyrights">© {{ "now" | date: "%Y" }} Todos los derechos reservados.</div> -->
           </header>
 
           <!-- Mobile Navigation -->
@@ -139,9 +139,9 @@
                     <div class="row">
                       <div class="col-sm-12 col-md-12 col-lg-12">
                         <div class="title-block">
-                          <h2>{{ site.data.resume.name }}</h2>
+                          <h2>{{ site.data.curriculum.name }}</h2>
                           <div class="owl-carousel text-rotation">  
-                            {% for title in site.data.resume.titles %}                                  
+                            {% for title in site.data.curriculum.titles %}                                  
                               <div class="item">
                                 <div class="sp-subtitle">{{ title }}</div>
                               </div>
@@ -160,57 +160,57 @@
               <section data-id="about-me" class="animated-section">
                 <div class="section-content">
                   <div class="page-title">
-                    <h2>About <span>Me</span></h2>
+                    <h2>Sobre <span>Mi</span></h2>
                   </div>
 
                   <!-- Personal Information -->
                   <div class="row">
                     <div class="col-xs-12 col-sm-7">
-                      <p>{{ site.data.resume.about-me }}</p>
+                      <p>{{ site.data.curriculum.about-me }}</p>
                     </div>
 
                     <div class="col-xs-12 col-sm-5">
                       <div class="info-list">
                         <ul>
-                          {% if site.data.resume.age %}
+                          {% if site.data.curriculum.age %}
                           <li>
                             <span class="title">Edad</span>
-                            <span class="value">{{ 'now' | date: '%Y' | minus: site.data.resume.age }}</span>
+                            <span class="value">{{ 'now' | date: '%Y' | minus: site.data.curriculum.age }}</span>
                           </li>
                           {% endif %}
 
-                          {% if site.data.resume.residence %}
+                          {% if site.data.curriculum.residence %}
                           <li>
-                            <span class="title">Residency</span>
-                            <span class="value">{{ site.data.resume.residence }}</span>
+                            <span class="title">Residencia</span>
+                            <span class="value">{{ site.data.curriculum.residence }}</span>
                           </li>
                           {% endif %}
 
-                          {% if site.data.resume.nationality %}
+                          {% if site.data.curriculum.nationality %}
                           <li>
-                            <span class="title">Nationality</span>
-                            <span class="value">{{ site.data.resume.nationality }}</span>
+                            <span class="title">Nacionalidad</span>
+                            <span class="value">{{ site.data.curriculum.nationality }}</span>
                           </li>
                           {% endif %}
 
-                          {% if site.data.resume.adress %}
+                          {% if site.data.curriculum.adress %}
                           <li>
-                            <span class="title">Address</span>
-                            <span class="value">{{ site.data.resume.adress }}</span>
+                            <span class="title">Dirección</span>
+                            <span class="value">{{ site.data.curriculum.adress }}</span>
                           </li>
                           {% endif %}
 
-                          {% if site.data.resume.email %}
+                          {% if site.data.curriculum.email %}
                           <li>
                             <span class="title">e-mail</span>
-                            <span class="value">{{ site.data.resume.email }}</span>
+                            <span class="value">{{ site.data.curriculum.email }}</span>
                           </li>
                           {% endif %}
 
-                          {% if site.data.resume.phone %}
+                          {% if site.data.curriculum.phone %}
                           <li>
-                            <span class="title">Phone</span>
-                            <span class="value">{{ site.data.resume.phone }}</span>
+                            <span class="title">Teléfono</span>
+                            <span class="value">{{ site.data.curriculum.phone }}</span>
                           </li>
                           {% endif %}
                         </ul>
@@ -219,12 +219,12 @@
                   </div>
                   <!-- End of Personal Information -->
                   <div class="white-space-50"></div>
-                  {% if site.data.resume.services %}
+                  {% if site.data.curriculum.services %}
                   <!-- Services -->
                   <div class="row">
                     <div class="col-xs-12 col-sm-12">
                       <div class="block-title">
-                        <h3>My <span>Services</span></h3>
+                        <h3>Mis <span>Servicios</span></h3>
                       </div>
                     </div>
                   </div>
@@ -233,26 +233,26 @@
                     <div class="col-xs-12 col-sm-6">
                       <div class="col-inner">
                         <div class="info-list-w-icon">
-                        {% if site.data.resume.services[0] %}
+                        {% if site.data.curriculum.services[0] %}
                           <div class="info-block-w-icon">
                             <div class="ci-icon">
-                              <i class="lnr lnr-{{ site.data.resume.services[0].icon }}"></i>
+                              <i class="lnr lnr-{{ site.data.curriculum.services[0].icon }}"></i>
                             </div>
                             <div class="ci-text">
-                              <h4>{{ site.data.resume.services[0].title }}</h4>
-                              <p>{{ site.data.resume.services[0].description  }}</p>
+                              <h4>{{ site.data.curriculum.services[0].title }}</h4>
+                              <p>{{ site.data.curriculum.services[0].description  }}</p>
                             </div>
                           </div>
                         {% endif %}
                           
-                        {% if site.data.resume.services[2] %}
+                        {% if site.data.curriculum.services[2] %}
                           <div class="info-block-w-icon">
                             <div class="ci-icon">
-                              <i class="lnr lnr-{{ site.data.resume.services[2].icon }}"></i>
+                              <i class="lnr lnr-{{ site.data.curriculum.services[2].icon }}"></i>
                             </div>
                             <div class="ci-text">
-                              <h4>{{ site.data.resume.services[2].title }}</h4>
-                              <p>{{ site.data.resume.services[2].description  }}</p>
+                              <h4>{{ site.data.curriculum.services[2].title }}</h4>
+                              <p>{{ site.data.curriculum.services[2].description  }}</p>
                             </div>
                           </div>
                         {% endif %}
@@ -263,26 +263,26 @@
                     <div class="col-xs-12 col-sm-6">
                       <div class="col-inner">
                         <div class="info-list-w-icon">
-                        {% if site.data.resume.services[1] %}
+                        {% if site.data.curriculum.services[1] %}
                           <div class="info-block-w-icon">
                             <div class="ci-icon">
-                              <i class="lnr lnr-{{ site.data.resume.services[1].icon }}"></i>
+                              <i class="lnr lnr-{{ site.data.curriculum.services[1].icon }}"></i>
                             </div>
                             <div class="ci-text">
-                              <h4>{{ site.data.resume.services[1].title }}</h4>
-                              <p>{{ site.data.resume.services[1].description  }}</p>
+                              <h4>{{ site.data.curriculum.services[1].title }}</h4>
+                              <p>{{ site.data.curriculum.services[1].description  }}</p>
                             </div>
                           </div>
                         {% endif %}
                           
-                        {% if site.data.resume.services[3] %}
+                        {% if site.data.curriculum.services[3] %}
                           <div class="info-block-w-icon">
                             <div class="ci-icon">
-                              <i class="lnr lnr-{{ site.data.resume.services[3].icon }}"></i>
+                              <i class="lnr lnr-{{ site.data.curriculum.services[3].icon }}"></i>
                             </div>
                             <div class="ci-text">
-                              <h4>{{ site.data.resume.services[3].title }}</h4>
-                              <p>{{ site.data.resume.services[3].description  }}</p>
+                              <h4>{{ site.data.curriculum.services[3].title }}</h4>
+                              <p>{{ site.data.curriculum.services[3].description  }}</p>
                             </div>
                           </div>
                         {% endif %}
@@ -294,7 +294,7 @@
 
                   <div class="white-space-30"></div>
                 {% endif %}
-                {% if site.data.resume.testimonials %}
+                {% if site.data.curriculum.testimonials %}
                   <!-- Testimonials -->
                   <div class="row">
                     <div class="col-xs-12 col-sm-12">
@@ -310,7 +310,7 @@
                         <!-- Testimonial 1 -->
                         <div class="testimonial">
                           <div class="img">
-                            <img src="assets/resume/img/testimonials/testimonial-1.jpg" alt="{{ site.data.resume.name }}">
+                            <img src="assets/resume/img/testimonials/testimonial-1.jpg" alt="{{ site.data.curriculum.name }}">
                           </div>
                           <div class="text">
                             <p>Vivamus at molestie dui, eu ornare orci. Curabitur vel egestas dolor. Nulla condimentum nunc sit amet urna tempus finibus. Duis mollis leo id ligula pellentesque, at vehicula dui ultrices.</p>
@@ -329,7 +329,7 @@
                         <!-- Testimonial 2 -->
                         <div class="testimonial">
                           <div class="img">
-                            <img src="assets/resume/img/testimonials/testimonial-2.jpg" alt="{{ site.data.resume.name }}">
+                            <img src="assets/resume/img/testimonials/testimonial-2.jpg" alt="{{ site.data.curriculum.name }}">
                           </div>
                           <div class="text">
                             <p>Vivamus at molestie dui, eu ornare orci. Curabitur vel egestas dolor. Nulla condimentum nunc sit amet urna tempus finibus. Duis mollis leo id ligula pellentesque, at vehicula dui ultrices.</p>
@@ -348,7 +348,7 @@
                         <!-- Testimonial 3 -->
                         <div class="testimonial">
                           <div class="img">
-                            <img src="assets/resume/img/testimonials/testimonial-3.jpg" alt="{{ site.data.resume.name }}">
+                            <img src="assets/resume/img/testimonials/testimonial-3.jpg" alt="{{ site.data.curriculum.name }}">
                           </div>
                           <div class="text">
                             <p>Vivamus at molestie dui, eu ornare orci. Curabitur vel egestas dolor. Nulla condimentum nunc sit amet urna tempus finibus. Duis mollis leo id ligula pellentesque, at vehicula dui ultrices.</p>
@@ -370,7 +370,7 @@
 
                   <div class="white-space-50"></div>
                 {% endif %}
-                {% if site.data.resume.clients %}
+                {% if site.data.curriculum.clients %}
                   <!-- Clients -->
                   <div class="row">
                     <div class="col-xs-12 col-sm-12">
@@ -384,7 +384,7 @@
                     <div class="col-xs-12 col-sm-12">
                       <div class="clients owl-carousel">
                         
-                      {% for client in site.data.resume.clients %}
+                      {% for client in site.data.curriculum.clients %}
                         <div class="client-block">
                           <a href="{{ client.url }}" target="_blank" title="Logo">
                             <img src="assets/resume/img/clients/{{ client.logo }}" alt="Logo">
@@ -397,7 +397,7 @@
                   </div>
                   <!-- End of Clients -->
                   {% endif %}
-                  {% if site.data.resume.facts %}
+                  {% if site.data.curriculum.facts %}
                   <div class="white-space-50"></div>
                   <!-- Fun Facts -->
                   <div class="row">
@@ -447,18 +447,18 @@
               <section data-id="resume" class="animated-section">
                 <div class="section-content">
                   <div class="page-title">
-                    <h2>Resume</h2>
+                    <h2>Curriculum</h2>
                   </div>
 
                   <div class="row">
                     <div class="col-xs-12 col-sm-7">
-                    {% if site.data.resume.experiences %}
+                    {% if site.data.curriculum.experiences %}
                       <div class="block-title">
-                        <h3>Experience</h3>
+                        <h3>Experiencia</h3>
                       </div>
 
                       <div class="timeline timeline-second-style clearfix">
-                      {% for experience in site.data.resume.experiences %}
+                      {% for experience in site.data.curriculum.experiences %}
                         <div class="timeline-item clearfix">
                           <div class="left-part">
                             <h5 class="item-period">{{ experience.from }} - {{ experience.to }}</h5>
@@ -475,13 +475,13 @@
                       
                       <div class="white-space-50"></div>
                       {% endif %}
-                      {% if site.data.resume.education %}
+                      {% if site.data.curriculum.education %}
                       <div class="block-title">
-                        <h3>Education</h3>
+                        <h3>Educación</h3>
                       </div>
                       
                       <div class="timeline timeline-second-style clearfix">
-                        {% for education in site.data.resume.education %}
+                        {% for education in site.data.curriculum.education %}
                         <div class="timeline-item clearfix">
                           <div class="left-part">
                             <h5 class="item-period">{{ education.date }}</h5>
@@ -502,11 +502,11 @@
                     <div class="col-xs-12 col-sm-5">
                       <!-- Skills -->
                       <div class="block-title">
-                        <h3><span>Skills</span></h3>
+                        <h3><span>Competencias</span></h3>
                       </div>
 
                       <div class="skills-info skills-second-style">
-                      {% for skill in site.data.resume.skills %}
+                      {% for skill in site.data.curriculum.skills %}
                         <!-- Skill 1 -->
                         <div class="skill clearfix">
                           <h4>{{ skill.title }}</h4>
@@ -524,11 +524,11 @@
 
                       <!-- language Skills -->
                       <div class="block-title">
-                        <h3><span>Language</span></h3>
+                        <h3><span>Idiomas</span></h3>
                       </div>
 
                       <div class="skills-info skills-second-style">
-                      {% for language in site.data.resume.languages %}
+                      {% for language in site.data.curriculum.languages %}
                         <!-- Skill 1 -->
                         <div class="skill clearfix">
                           <h4>{{ language.language }}</h4>
@@ -544,12 +544,12 @@
 
                       <div class="white-space-10"></div>
                       <!-- Knowledges -->
-                      {% if site.data.resume.knowledges %}
+                      {% if site.data.curriculum.knowledges %}
                       <div class="block-title">
-                        <h3>Knowledges</h3>
+                        <h3>Conocimientos</h3>
                       </div>
                       <ul class="knowledges">
-                        {% for knowledge in site.data.resume.knowledges %}
+                        {% for knowledge in site.data.curriculum.knowledges %}
                           <li>{{ knowledge }}</li>
                         {% endfor %}
                       </ul>
@@ -561,7 +561,7 @@
 
                   <div class="white-space-50"></div>
 
-                  {% if site.data.resume.certificates %}
+                  {% if site.data.curriculum.certificates %}
                   <!-- Certificates -->
                   <div class="row">
                     <div class="col-xs-12 col-sm-12">
@@ -629,12 +629,12 @@
               </section>
               <!-- End of Resume Subpage -->
 
-              {% if site.data.resume.portfolio %}
+              {% if site.data.curriculum.portfolio %}
               <!-- Portfolio Subpage -->
               <section data-id="portfolio" class="animated-section">
                 <div class="section-content">
                   <div class="page-title">
-                    <h2>Portfolio</h2>
+                    <h2>Portafolio</h2>
                   </div>
 
                   <div class="row">
@@ -665,7 +665,7 @@
 
                         <!-- Portfolio Grid -->
                         <div class="portfolio-grid three-columns">
-                          {% for project in site.data.resume.portfolio %}
+                          {% for project in site.data.curriculum.portfolio %}
                           <figure class="item lbimage" data-groups='["category_all", "category_mockups"]'>
                             <div class="portfolio-item-img">
                               <img src="assets/resume/img/portfolio/{{ project.img }}" alt="{{ project.title }}" title="" />
@@ -863,7 +863,7 @@
               <section data-id="contact" class="animated-section">
                 <div class="section-content">
                   <div class="page-title">
-                    <h2>Contact</h2>
+                    <h2>Contacto</h2>
                   </div>
 
                   <div class="row">
@@ -871,28 +871,28 @@
                     <div class="col-xs-12 col-sm-12">
                       <div class="lm-info-block gray-default">
                         <i class="lnr lnr-map-marker"></i>
-                        <h4>{{ site.data.resume.available-location }}</h4>
+                        <h4>{{ site.data.curriculum.available-location }}</h4>
                         <span class="lm-info-block-value"></span>
                         <span class="lm-info-block-text"></span>
                       </div>
 
                       <div class="lm-info-block gray-default">
                         <i class="lnr lnr-phone-handset"></i>
-                        <h4>{{ site.data.resume.phone }}</h4>
+                        <h4>{{ site.data.curriculum.phone }}</h4>
                         <span class="lm-info-block-value"></span>
                         <span class="lm-info-block-text"></span>
                       </div>
 
                       <div class="lm-info-block gray-default">
                         <i class="lnr lnr-envelope"></i>
-                        <h4>{{ site.data.resume.email }}</h4>
+                        <h4>{{ site.data.curriculum.email }}</h4>
                         <span class="lm-info-block-value"></span>
                         <span class="lm-info-block-text"></span>
                       </div>
 
                       <div class="lm-info-block gray-default">
                         <i class="lnr lnr-checkmark-circle"></i>
-                        <h4>{{ site.data.resume.available }}</h4>
+                        <h4>{{ site.data.curriculum.available }}</h4>
                         <span class="lm-info-block-value"></span>
                         <span class="lm-info-block-text"></span>
                       </div>

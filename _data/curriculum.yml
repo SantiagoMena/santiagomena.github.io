@@ -1,0 +1,201 @@
+name: "Santiago Mena Peña"
+title: "FullStack Software Engineer"
+cv: "CV_SantiagoMena_FullStack_PHP_NODE_GO_JS.pdf"
+titles:
+  - "Desarrollador FullStack"
+  - "Desarrollador PHP"
+  - "Desarrollador Symfony "
+  - "Desarrollador Laravel"
+  - "Desarrollador Codeignitier"
+  - "Desarrollador NodeJS "
+  - "Desarrollador ReactNative"
+  - "Desarrollador Flutter"
+  - "Desarrollador de Apps"
+  - "Desarrollador de APIs"
+about-me: "Con más de 9 años de experiencia como Desarrollador Web en tecnologías como PHP, NodeJS, GoLang y JavaScript, he trabajado en diversos proyectos y con clientes variados. Me apasiona aprender nuevas tecnologías, explorar diferentes campos laborales y enfrentar desafíos constantes. Mi perseverancia, habilidad analítica, energía y enfoque autodidacta me motivan a crecer y mejorar continuamente."
+age: 1995
+residence: "Argentina"
+nationality: "Colombia"
+email: "santiagomenape@gmail.com"
+phone: "+5491128757248"
+available-location: "Remote"
+available: "Disponibilidad Freelance"
+social-links:
+  - {icon: "linkedin-in", url: "https://www.linkedin.com/in/santiagomenap/"}
+  - {icon: "github", url: "https://github.com/SantiagoMena/"}
+  - {icon: "gitlab", url: "https://gitlab.com/SantiagoMena"}
+  - {icon: "whatsapp", url: "https://wa.me/5491128757248"}
+knowledges:
+  - "PHP"
+  - "GO"
+  - "Symfony"
+  - "Laravel"
+  - "Yii"
+  - "Codeignitier"
+  - "React"
+  - "React Native"
+  - "Flutter"
+  - "Redux"
+  - "Express.js"
+  - "MySQL"
+  - "ElasticSearch"
+  - "JavaScript"
+  - "GCP"
+  - "AWS"
+  - "EC2"
+  - "S3"
+  - "RDS"
+  - "BigQuery"
+  - "MongoDB"
+  - "Twig"
+  - "Yaml"
+  - "GIT"
+skills:
+  - {title: "Desarrollo Backend", percent: 93}
+  - {title: "Desarrollo Frontend", percent: 45}
+  - {title: "Desarrollo de Aplicaciones", percent: 50}
+  - {title: "Bases de Datos", percent: 65}
+  - {title: "Gestión de Proyectos", percent: 67}
+  - {title: "Refactorización", percent: 40}
+  - {title: "Test Unitarios", percent: 60}
+  - {title: "Patrones de Diseño", percent: 40}
+  - {title: "SOLID", percent: 50}
+experiences:
+  - {
+      title: "Programador Web Full Stack",
+      company: "UNOPS",
+      description: "Desarrollé software para el Ministerio de Educación del Gobierno de la Ciudad de Buenos Aires. Mi labor consistió en la creación de nuevos sistemas utilizando las tecnologías Symfony y Laravel. Además, llevé a cabo integraciones SOAP con AFIP, el organismo fiscal de Argentina.",
+      from: "2021",
+      to: "2023"
+    }
+  - {
+      title: "Programador Full Stack", 
+      company: "Petbnb.nl",
+      description: "Mis logros incluyen la exitosa migración del sistema web a un API REST, la integración exitosa de diversas APIs como Sendbird, Twilio, OBP Payments y BigQuery, la implementación de ElasticSearch para optimizar las búsquedas y la extracción y procesamiento de datos para generar informes en Looker/Datastudio, lo que permitió entender mejor los movimientos del negocio.",
+      from: "2020",
+      to: "2023"
+    }
+  - {
+      title: "Programador Full Stack", 
+      company: "A1500",
+      description: "Desarrollé el Backoffice de administración para Seeconds, una plataforma similar a TikTok, permitiendo gestionar y administrar de manera eficiente la aplicación.",
+      from: "2021",
+      to: "2021"
+    }
+  - {
+      title: "Programador Full Stack", 
+      company: "Ojiva.es",
+      description: "Desarrollé mejoras en el backoffice y la aplicación de una red social dedicada a los pescadores, optimizando su funcionamiento y experiencia de usuario.",
+      from: "2021",
+      to: "2021"
+    }
+  - {
+      title: "Lider Técnico", 
+      company: "Alberione Ingeniería de Sistemas",
+      description: "Lideré un equipo de 3 desarrolladores para elaborar un sistema de formularios para la provincia de Santa Fé",
+      from: "2021",
+      to: "2021"
+    }
+  - {
+      title: "Desarrollador Full Stack", 
+      company: "DeOliva S.R.L.",
+      description: "Desarrollé APIs y backoffice para un mapa interactivo de lotes. Además, creé APIs para la gestión de anuncios en Spotify.",
+      from: "2018",
+      to: "2023"
+    }
+  - {
+      title: "Desarrollador Full Stack", 
+      company: "Kickads.mobi",
+      description: "Desarrollé un adserver de públicidad con integración de APIs de adnetworks",
+      from: "2015",
+      to: "2018"
+    }
+education:
+  - {
+      title: "Programa Ejecutivo en Project Management",
+      date: "2019",
+      institution: "Universidad Tecnológica Nacional",
+      description: "Diplomatura en gestión de proyectos en base a PMI y PMBOK"
+    }
+  - {
+      title: "Programador Web Avanzado",
+      date: "2015",
+      institution: "Universidad Tecnológica Nacional",
+      description: "Diplomatura en Programación Web Avanzada"
+    }
+  - {
+      title: "Ingeniería de Sistemas",
+      date: "2013",
+      institution: "Universidad De Los Llanos",
+      description: "Programa en Ingeniería de Sistemas - no concluido"
+    }
+clients:
+  - {logo: "petbnb.png", url: "https://petbnb.nl/"}
+  - {logo: "bambic.png", url: "https://bambic.com.ar/"}
+  - {logo: "vazquez.png", url: "https://carlosvazquezehijopropiedades.com.ar/"}
+  - {logo: "brana.png", url: "https://xn--abraa-rta.com.ar/"}
+  - {logo: "vital.png", url: "https://vitalpropiedades.com.ar/"}
+  - {logo: "contenidos-digitales.svg", url: "https://contenidos-digitales.com/"}
+  - {logo: "kickads.png", url: "https://kickads.mobi/"}
+  - {logo: "litteratorum.png", url: "https://www.litteratorum.com/"}
+services:
+  - {
+      title: "Desarrollo Web",
+      description: "Ofrezco servicios de desarrollo autónomo, creando sistemas y páginas web personalizadas, brindando soluciones adaptadas a las necesidades de cada cliente.",
+      icon: "laptop-phone"
+    }
+  - {
+      title: "Migración de sistemas Legacy",
+      description: "Migración de sistemas legacy, erados o antiguos, a nuevos frameworks",
+      icon: "code"
+    }
+  - {
+      title: "Desarrollo de aplicaciones",
+      description: "Desarrollo de aplicaciones híbridas en React Native o Flutter",
+      icon: "smartphone"
+    }
+  - {
+      title: "Desarrollo y Sincronización de APIs",
+      description: "Desarrollo y sincronización entre APIs de servidores propios y de terceros",
+      icon: "cloud-sync"
+    }
+portfolio:
+  - {
+      title: "PetBnB",
+      img: "petbnb.jpeg"
+    }
+  - {
+      title: "Metatiendanube.com",
+      img: "metatiendanube.jpeg"
+    }
+  - {
+      title: "B4B WhatsApp",
+      img: "hook.jpeg"
+    }
+  - {
+      title: "Bambic Propiedades",
+      img: "bambic.jpeg"
+    }
+  - {
+      title: "Braña Propiedades",
+      img: "brana.jpeg"
+    }
+  - {
+      title: "Lugano Vive",
+      img: "luganovive.jpeg"
+    }
+  - {
+      title: "Vital Propiedades",
+      img: "vital.jpeg"
+    }
+  - {
+      title: "Vazquez Propiedades",
+      img: "vazquez.jpeg"
+    }
+  - {
+      title: "Litteratorum",
+      img: "litteratorum.jpeg"
+    }
+languages:
+  - {language: "Español", percent: 100}
+  - {language: "Inglés", percent: 50}
