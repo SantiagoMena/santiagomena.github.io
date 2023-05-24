@@ -287,7 +287,7 @@ input[type="submit"]:focus {
     min-height: inherit;
     text-align: center;
     padding: 70px 30px 45px;
-    overflow: auto;
+    overflow: hidden;
   }
 
   .header-titles {
@@ -2281,7 +2281,7 @@ blockquote {
     text-align: center;
     opacity: 1;
     visibility: visible;
-    overflow: auto;
+    overflow: hidden;
     -webkit-transition: all .25s ease-in-out;
     -moz-transition: all .25s ease-in-out;
     -o-transition: all .25s ease-in-out;
