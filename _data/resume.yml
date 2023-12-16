@@ -18,7 +18,7 @@ residence: "Argentina"
 nationality: "Colombia"
 #email: "santiagomenape@gmail.com"
 #phone: "+5491128757248"
-available-location: "Remote"
+available-location: "Remote [ GMT -3 ]"
 available: "Freelance Availability"
 social-links:
   - {icon: "linkedin-in", url: "https://www.linkedin.com/in/santiagomenap/"}
