@@ -24,6 +24,8 @@ social-links:
   - {icon: "linkedin-in", url: "https://www.linkedin.com/in/santiagomenap/"}
   - {icon: "github", url: "https://github.com/SantiagoMena/"}
   - {icon: "gitlab", url: "https://gitlab.com/SantiagoMena"}
+contact-links:
+  - {icon: "linkedin-in", url: "https://www.linkedin.com/in/santiagomenap/"}
 #  - {icon: "whatsapp", url: "https://wa.me/5491128757248"}
 knowledges:
   - "PHP"
