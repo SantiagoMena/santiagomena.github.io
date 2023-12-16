@@ -12,19 +12,19 @@ titles:
   - "Desarrollador Flutter"
   - "Desarrollador de Apps"
   - "Desarrollador de APIs"
-about-me: "Con más de 9 años de experiencia como Desarrollador Web en tecnologías como PHP, NodeJS, GoLang y JavaScript, he trabajado en diversos proyectos y con clientes variados. Me apasiona aprender nuevas tecnologías, explorar diferentes campos laborales y enfrentar desafíos constantes. Mi perseverancia, habilidad analítica, energía y enfoque autodidacta me motivan a crecer y mejorar continuamente."
+about-me: "Con más de 10 años de experiencia como Desarrollador Web en tecnologías como PHP, NodeJS, GoLang y JavaScript, he trabajado en diversos proyectos y con clientes variados. Me apasiona aprender nuevas tecnologías, explorar diferentes campos laborales y enfrentar desafíos constantes. Mi perseverancia, habilidad analítica, energía y enfoque autodidacta me motivan a crecer y mejorar continuamente."
 age: 1995
 residence: "Argentina"
 nationality: "Colombia"
-email: "santiagomenape@gmail.com"
-phone: "+5491128757248"
+#email: "santiagomenape@gmail.com"
+#phone: "+5491128757248"
 available-location: "Remote"
 available: "Disponibilidad Freelance"
 social-links:
   - {icon: "linkedin-in", url: "https://www.linkedin.com/in/santiagomenap/"}
   - {icon: "github", url: "https://github.com/SantiagoMena/"}
   - {icon: "gitlab", url: "https://gitlab.com/SantiagoMena"}
-  - {icon: "whatsapp", url: "https://wa.me/5491128757248"}
+#  - {icon: "whatsapp", url: "https://wa.me/5491128757248"}
 knowledges:
   - "PHP"
   - "GO"
