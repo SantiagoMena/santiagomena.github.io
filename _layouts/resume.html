@@ -876,19 +876,34 @@
                         <span class="lm-info-block-text"></span>
                       </div>
 
+                      {% if site.data.resume.contact-links %}
+                        {% for link in site.data.resume.contact-links %}
+                        <div class="lm-info-block gray-default">
+                          <i class="fab fa-{{ link.icon }}"></i>
+                          <h4><a href="{{ link.url }}">{{ link.url }}</a></h4>
+                          <span class="lm-info-block-value"></span>
+                          <span class="lm-info-block-text"></span>
+                        </div>
+                        {% endfor %}
+                      {% endif %}
+
+                      {% if site.data.resume.phone %}
                       <div class="lm-info-block gray-default">
                         <i class="lnr lnr-phone-handset"></i>
                         <h4>{{ site.data.resume.phone }}</h4>
                         <span class="lm-info-block-value"></span>
                         <span class="lm-info-block-text"></span>
                       </div>
+                      {% endif %}
 
+                      {% if site.data.resume.email %}
                       <div class="lm-info-block gray-default">
                         <i class="lnr lnr-envelope"></i>
                         <h4>{{ site.data.resume.email }}</h4>
                         <span class="lm-info-block-value"></span>
                         <span class="lm-info-block-text"></span>
                       </div>
+                      {% endif %}
 
                       <div class="lm-info-block gray-default">
                         <i class="lnr lnr-checkmark-circle"></i>
