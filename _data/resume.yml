@@ -14,11 +14,11 @@ titles:
   - "API Developer"
 about-me: "With more than 10 years of experience as a Web Developer in technologies such as PHP, NodeJS, GoLang and JavaScript, I have worked on diverse projects and with varied clients. I am passionate about learning new technologies, exploring different fields of work and facing constant challenges. My perseverance, analytical skills, energy and self-taught approach motivate me to grow and improve continuously."
 age: 1995
-residence: "Argentina"
+residence: "CEST"
 nationality: "Colombia"
 #email: "santiagomenape@gmail.com"
 #phone: "+5491128757248"
-available-location: "Remote [ GMT -3 ]"
+available-location: "Remote [ CEST ]"
 available: "Freelance Availability"
 social-links:
   - {icon: "linkedin-in", url: "https://www.linkedin.com/in/santiagomenap/"}
@@ -29,14 +29,12 @@ contact-links:
   - {icon: "linkedin-in", url: "https://www.linkedin.com/in/santiagomenap/"}
 knowledges:
   - "PHP"
-  - "GO"
   - "Symfony"
   - "Laravel"
   - "Yii"
   - "Codeignitier"
   - "React"
   - "React Native"
-  - "Flutter"
   - "Redux"
   - "Express.js"
   - "MySQL"
